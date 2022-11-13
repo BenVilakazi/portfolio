@@ -1,7 +1,9 @@
 import Head from 'next/head';
-import AnimatedLogo from '../components/AnimatedLogo';
+
 import styles from '../styles/pages/Home.module.scss';
 
+import HeroSection from '../components/HeroSection';
+import AboutSection from '../components/AboutSection';
 export default function Home() {
   return (
     <>
@@ -11,7 +13,8 @@ export default function Home() {
       </Head>
 
       <div className={styles.container}>
-      <AnimatedLogo />
+      <HeroSection />
+      <AboutSection />
       </div>
     </>
   ); 
